@@ -1,0 +1,6 @@
+<div class="outer">
+  <span>Outer</span>
+<div>{{xyz}}</div>
+<div>Selected:{{name}}</div>
+<app-inner *ngFor="let name of xyz" [outername]="name" (eventFromInner)="eventFromInner($event)"></app-inner>
+</div>

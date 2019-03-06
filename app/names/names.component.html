@@ -1,0 +1,10 @@
+<div class="name-container">
+  <span>Name Container</span>
+ <!--instead write ng-repeat -ngFor
+    <app-name-tag [name]="name"></app-name-tag>
+  <app-name-tag [name]="name"></app-name-tag>
+  <app-name-tag [name]="name"></app-name-tag>
+  <app-name-tag [name]="name"></app-name-tag>-->
+  <app-name-tag *ngFor="let name of nameList" [name]="name"></app-name-tag>
+
+</div>
